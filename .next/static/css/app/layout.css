@@ -1,0 +1,56 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Ocultar elementos de UI do Spline */
+[data-spline-toolbar],
+[data-spline-ui],
+[data-spline-menu],
+.spline-toolbar,
+.spline-controls,
+.spline-ui,
+.spline-sidebar,
+.spline-menu {
+  display: none !important;
+}
+
+/* Ocultar TODAS as ferramentas de desenvolvimento do Next.js */
+[data-nextjs-toast],
+[data-nextjs-dialog],
+[data-nextjs-scroll-focus-boundary],
+.__next-dev-tools,
+.__next-build-watcher,
+[id*="__next"],
+[class*="__next"],
+/* Ocultar especificamente o painel de preferências */
+[data-nextjs-toast-errors],
+[data-nextjs-dialog-overlay],
+[data-nextjs-dialog-content],
+/* Ocultar botões de dev tools */
+button[data-nextjs],
+div[data-nextjs],
+/* Ocultar overlay de erros */
+nextjs-portal,
+[data-nextjs-dialog-left-right],
+[data-nextjs-dialog-banner],
+/* Ocultar indicadores de build */
+[data-nextjs-build-indicator],
+/* Ocultar qualquer elemento com nextjs no nome */
+*[class*="nextjs"],
+*[id*="nextjs"],
+*[data-*="nextjs"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}
+
